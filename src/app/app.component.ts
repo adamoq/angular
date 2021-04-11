@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import {moveFromLeftFade} from "ngx-router-animations";
+import {rotateCarouselToRight} from "ngx-router-animations";
 import {trigger, transition, useAnimation} from "@angular/animations";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   animations: [
-    trigger('rotateFlipToTop', [ transition('* => *', useAnimation(rotateFlipToTop))])
+    trigger('rotateFlipToTop', [ transition('* => *', useAnimation(rotateCarouselToRight))])
   ]
 })
 export class AppComponent {
