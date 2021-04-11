@@ -6,7 +6,7 @@ import {trigger, transition, useAnimation} from "@angular/animations";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   animations: [
-    trigger('rotateCubeToLeft', [ transition('* => *', useAnimation(moveFromLeftFade))])
+    trigger('rotateFlipToTop', [ transition('* => *', useAnimation(rotateFlipToTop))])
   ]
 })
 export class AppComponent {
