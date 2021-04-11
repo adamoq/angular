@@ -11,7 +11,11 @@ main {
 header {
   height: 60vh;
   width: 100vw;
+  h1 {
+    text-align: center;
+  }
 }
+
 html{
   font-family: 'Nunito', sans-serif;
   overflow-y: hidden;

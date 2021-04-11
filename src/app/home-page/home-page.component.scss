@@ -1,3 +1,10 @@
 header {
   background-color:#161faa;
+  background-image: url("/assets/img/mike.png"); /* fallback */
+  background-size: contain;
+  background-position: right;
+  color: white;
+  text-align: center;
+  background-image: linear-gradient(to bottom, rgba(32, 32, 32, 0.74), rgba(0, 0, 0, 0.733)),
+  url("/assets/img/mike.png");
 }
