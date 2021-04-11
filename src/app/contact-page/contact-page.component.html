@@ -10,22 +10,19 @@
   <p class="title">Formularz kontaktowy</p>
   <p class="desc">Uzupełnij formularz oraz kliknij przycisk "Wyślij".</p>
   <form [formGroup]="formData" (ngSubmit)="onSubmit(formData.value)">
-    <div class="form-group">
-      <label for="Email">Email</label>
-      <input type="email" class="form-control" name="Email" aria-describedby="emailHelp" placeholder="Enter email"
-        formControlName="Email">
+    <div class="col">
+        <input type="text" class="form-control" name="Fullname" placeholder="Full Name" formControlName="Fullname">
+        <label for="fullname">Imię i nazwisko</label>
+        <input type="email" class="form-control" name="Email" aria-describedby="emailHelp" placeholder="Enter email" formControlName="Email">
+        <label for="Email">E-mail</label>
+        <input type="text" class="form-control" name="phonenumber" placeholder="" formControlName="phonenumber">
+        <label for="phonenumber">Numer telefonu</label>
     </div>
-    <div class="form-group">
-      <label for="fullname">Full Name</label>
-      <input type="text" class="form-control" name="Fullname" placeholder="Full Name" formControlName="Fullname">
-    </div>
-    <div class="form-group">
+    <div class="col">
       <label for="comment">Comment</label>
       <textarea class="form-control" formControlName="Comment" name="Comment">
-    </textarea>
+      </textarea>
+      <button type="submit" class="btn" [disabled]="!formData.valid">Submit</button>
     </div>
-    <button type="submit" class="btn" [disabled]="!formData.valid">Submit</button>
   </form>
 </section>
-
-<app-footer></app-footer>

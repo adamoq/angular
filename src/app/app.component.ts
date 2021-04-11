@@ -14,5 +14,8 @@ export class AppComponent {
   prepareRoute(outlet){
     return outlet.activatedRouteData
   }
-
+  hideMenu(): void {
+    document.getElementById("hamburger").click();
+  }
 }
+

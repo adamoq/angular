@@ -1,14 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;800&display=swap");
-$base-color: #E9803F;
-$secondary-color: #363740;
-$contrast-color: #c6538c;
-$breakpoint-tablet: 1025px;
-$breakpoint-mobile: 481px;
-
-$nav-links: about, products, media;
+@import 'variables';
 main {
-  overflow-y: scroll !important;
-  height: 100vh;
+  min-height: 100vh;
   scroll-behavior: smooth;
   padding-top: 54px;
 }
@@ -24,7 +17,6 @@ header {
 
 html {
   font-family: "Nunito", sans-serif;
-  overflow-y: hidden;
 }
 body {
   margin: 0;
@@ -162,14 +154,16 @@ footer {
   }
   footer {
     .col {
-      width: 49%;
-      display: inline-block;
       padding-left: 10%;
       padding-top: 30vh;
     }
     img {
       max-width: 30%;
     }
+  }
+  .col {
+    width: 49%;
+    display: inline-block;
   }
 }
 /*=====TABLETS & MOBILE ONLY=====*/
@@ -320,7 +314,6 @@ footer {
       width: 70%;
     }
     .col{
-      width: 100%;
       &:nth-of-type(1){
         order:2;
       }
@@ -328,6 +321,10 @@ footer {
         order:1;
       }
     }
+  }
+  .col{
+    width: 100%;
+    text-align: center;
   }
 }
 /*=====MOBILE ONLY=====*/

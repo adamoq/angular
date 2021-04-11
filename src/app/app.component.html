@@ -1,15 +1,25 @@
 <nav>
   <div class="header">
-    <a routerLink="/"><img src="/assets/img/logo.png"></a>
+    <a routerLink="/" (click)="hideMenu()"><img src="/assets/img/logo.png"></a>
   </div>
-  <input type="checkbox" id="hamburger1" />
-  <label for="hamburger1"></label>
+  <input type="checkbox" id="hamburger" />
+  <label for="hamburger"></label>
   <ul class="nav-links">
-    <li><a routerLink="/info">Nasza misja</a></li>
-    <li><a routerLink="/">Oferta</a></li>
-    <li><a routerLink="/kontakt">Skontaktuj się z nami</a></li>
+    <li><a routerLink="/info" (click)="hideMenu()">Nasza misja</a></li>
+    <li><a routerLink="/" (click)="hideMenu()">Oferta</a></li>
+    <li><a routerLink="/kontakt" (click)="hideMenu()">Skontaktuj się z nami</a></li>
   </ul>
   </nav>
 <main [@rotateCubeToLeft]="prepareRoute(o)" id="container">
   <router-outlet #o="outlet"></router-outlet>
 </main>
+<footer>
+  <div class="col">
+    <p class="title">Example Company</p>
+    <p class="desc">example@company.com</p>
+    <a class="btn" href="/kontakt"><span>Skontaktuj się z nami</span></a>
+  </div>
+  <div class="col">
+    <img src="/assets/img/logo.png">
+  </div>
+</footer>

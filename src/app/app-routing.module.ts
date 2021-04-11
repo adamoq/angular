@@ -11,7 +11,7 @@ const routes: Routes = [
 ];
 const routerOptions: ExtraOptions = {
   //useHash: false,
-  //scrollPositionRestoration: 'top'
+  scrollPositionRestoration: 'top'
   //anchorScrolling: 'enabled',
   // ...any other options you'd like to use
 };

@@ -1,16 +1,50 @@
+@import "../../scss/variables";
+
 header {
   color: #fff;
-  background-color:#333;
+  background-color: #333;
   background-image: url("/assets/img/background2.jpg");
   background-size: cover;
   background-position: bottom;
   text-align: center;
-  background-image: linear-gradient(to bottom, rgba(32, 32, 32, 0.85), rgba(0, 0, 0, 0.85)),
-  url("/assets/img/background2.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(32, 32, 32, 0.85),
+      rgba(0, 0, 0, 0.85)
+    ),
+    url("/assets/img/background2.jpg");
 }
 
 section {
   background-color: white;
   padding: 30px 0;
   text-align: center;
+  form {
+    display: flex;
+    flex-direction: row;
+  }
+  .col {
+    display: flex;
+    flex-direction: column;
+  }
+  input,
+  textarea {
+    width: 400px;
+    max-width: 80vw;
+    margin: 0 auto 20px auto;
+    border: 0;
+    background-color: #ddd;
+    color: black;
+    height: 40px;
+    font-family: "Nunito", sans-serif;
+  }
+  input:hover + label,
+  input:active + label,
+  textarea:hover + label,
+  textarea:active + label {
+    color: $base-color;
+  }
+  textarea{
+    height: 150px;
+  }
 }
