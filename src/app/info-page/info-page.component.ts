@@ -5,10 +5,5 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./info-page.component.scss']
 })
 export class InfoPageComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

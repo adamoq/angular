@@ -2,13 +2,14 @@
   <div class="header">
     <a routerLink="/"><img src="/assets/img/logo.png"></a>
   </div>
-  <ul>
-    <li><a routerLink="/"><i class="fas fa-camera"></i>Sto lat!</a></li>
-    <li><a routerLink="../info">Dużo zdrowia</a></li>
-    <li><a routerLink="/kontakt">Szczęścia</a></li>
-    <li><a routerLink="/kontakt">I $$$$!</a></li>
+  <input type="checkbox" id="hamburger1" />
+  <label for="hamburger1"></label>
+  <ul class="nav-links">
+    <li><a routerLink="/info">Nasza misja</a></li>
+    <li><a routerLink="/">Oferta</a></li>
+    <li><a routerLink="/kontakt">Skontaktuj się z nami</a></li>
   </ul>
   </nav>
-<main [@rotateCubeToLeft]="prepareRoute(o)">
+<main [@rotateCubeToLeft]="prepareRoute(o)" id="container">
   <router-outlet #o="outlet"></router-outlet>
 </main>
