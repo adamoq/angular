@@ -1,11 +1,11 @@
-<nav>
+<nav id="nav">
   <div class="header">
     <a routerLink="/" (click)="hideMenu()"><img src="/assets/img/logo.png"></a>
   </div>
   <input type="checkbox" id="hamburger" />
   <label for="hamburger"></label>
   <ul class="nav-links">
-    <li><a routerLink="/info" (click)="hideMenu()">{{ 'mission' | translate }}</a></li>
+    <li class="active"><a routerLink="/info" (click)="hideMenu()">{{ 'mission' | translate }}</a></li>
     <li><a routerLink="/logistics" (click)="hideMenu()">{{ 'logistics' | translate }}</a></li>
     <li><a routerLink="/contact" (click)="hideMenu()">{{ 'contact' | translate}}</a></li>
     <li>
@@ -13,7 +13,7 @@
       <img src="/assets/img/flags/en.svg" (click)="setLanguage('en')" class="lang">
     </li>
   </ul>
-  </nav>
+</nav>
 <main [@rotateCubeToLeft]="prepareRoute(o)" id="container">
   <router-outlet #o="outlet"></router-outlet>
 </main>

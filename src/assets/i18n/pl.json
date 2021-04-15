@@ -21,6 +21,7 @@
 
   "specializations": {
     "title": "Nasze specjalizacje",
+    "desc": "Specializations are our strength. Benefits of specializations are constant monitoring of the industry labor market, understanding Clients' needs in particular sectors of industry, identifying candidates by means of a professional market analysis and our own database, and fast completion of order.",
     "foods": "Żywność",
     "health": "Zdrowie",
     "beauty": "Uroda",
@@ -41,7 +42,7 @@
 
   "contactPage": {
     "title": "Skontaktuj się z nami",
-    "pageDesc": "Aby się z nami skonktaktować - napisz maila na adres podany poniżej lub uzupełnij formularz. Odpowiemy na Twoje zapytanie najszybciej jak to tylko możliwe!",
+    "pageDesc": "Aby się z nami skontaktować - napisz maila na adres 'xyz@xyz.com' lub uzupełnij poniższy formularz. Odpowiemy na Twoje zapytanie najszybciej jak to tylko możliwe.",
     "pageDesc2": "Odpowiemy na Twoje zapytanie najszybciej jak to tylko możliwe!",
     "fillForm": "Wypełnij formularz"
   },

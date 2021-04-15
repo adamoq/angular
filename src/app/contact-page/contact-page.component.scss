@@ -13,11 +13,13 @@ header {
     ),
     url("/assets/img/background2.jpg");
 }
-
-
+.container .desc{
+  text-align: center;
+}
 form {
   display: flex;
   flex-direction: row;
+  text-align: center;
 }
 .col {
   display: flex;
@@ -42,4 +44,9 @@ textarea:active + label {
 }
 textarea{
   height: 150px;
+}
+@media (max-width: $breakpoint-tablet) {
+  form {
+    flex-direction: column;
+  }
 }

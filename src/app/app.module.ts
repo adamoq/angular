@@ -8,8 +8,8 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { InfoPageComponent } from './info-page/info-page.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { LogisticsPageComponent } from './logistics-page/logistics-page.component';
 
@@ -25,7 +25,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     InfoPageComponent,
     FooterComponent,
     LogisticsPageComponent
-   ],
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -41,7 +41,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient]
       },
       defaultLanguage: 'en'
-  })
+    })
   ],
   providers: [HttpClientModule],
   bootstrap: [AppComponent]
