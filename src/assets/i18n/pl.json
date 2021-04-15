@@ -1,0 +1,57 @@
+{
+  "logistics": "Logistyka",
+  "contact": "Kontakt",
+  "mission": "Nasza misja",
+
+  "more": "Dowiedz się więcej",
+
+
+
+  "logisticsPage": {
+    "pageDesc": "Wierzymy w rozwijanie relacji z dostawcami i klientami. Działamy z zewnętrznych magazynów (sami profesjonaliści) w ramach SOP (Standardowe Procedury Operacyjne), dzięki czemu możemy zapewnić naszym klientom wysoki poziom usług.",
+    "transport": "Transport",
+    "transportDesc": "Współpraca z partnerami 4PL w zakresie transportu kolejowego, drogowego, lotniczego i morskiego pozwala nam oferować elastyczne i skalowalne rozwiązania transportowe. Współpracujemy z klientami w środowiskach zespołowych i możemy szybko mapować i rozwiązywać problemy związane z dystrybucją.",
+    "bulletsTitle": "Usługi o wartości dodanej",
+    "bullet1": "Komunikacja EDI",
+    "bullet2": "Usługi w zakresie przepakowywania i etykietowania",
+    "bullet3": "Dostawy na zamówienie (przepakowywanie)",
+    "bullet4": "Zgodność z dobrą praktyką dystrybucyjną (PKB)",
+    "bullet5": "Śledzenie przesyłek w Europie"
+  },
+
+  "specializations": {
+    "title": "Nasze specjalizacje",
+    "foods": "Żywność",
+    "health": "Zdrowie",
+    "beauty": "Uroda",
+    "home": "Dom",
+    "children": "Dzieci",
+    "lamber": "Lamber",
+    "furniture": "Meble",
+    "metals": "Metale",
+    "private": "Rebranding"
+  },
+
+  "missionPage": {
+    "title": "Nasza misja",
+    "pageDesc": "'Adami/ Miad Group' wysoce zmotywowany międzynarodowy zespół młodych, przedsiębiorczych osób z podejściem „da się zrobić”, osiągając wszystko co wydaje się nieosiągalne, łącząc w łatwy sposób popyt i podaż na całym świecie w mgnieniu oka. Dzięki naszej misji gwarantujemy naszym Partnerom sprawne zaopatrzenie, wsparcie i udaną współpracę."
+  },
+
+
+
+  "contactPage": {
+    "title": "Skontaktuj się z nami",
+    "pageDesc": "Aby się z nami skonktaktować - napisz maila na adres podany poniżej lub uzupełnij formularz. Odpowiemy na Twoje zapytanie najszybciej jak to tylko możliwe!",
+    "pageDesc2": "Odpowiemy na Twoje zapytanie najszybciej jak to tylko możliwe!",
+    "fillForm": "Wypełnij formularz"
+  },
+  "contactForm": {
+    "title": "Formularz kontaktowy",
+    "desc": "Uzupełnij formularz oraz kliknij przycisk 'Wyślij'.",
+    "pageDesc2": "Odpowiemy na Twoje zapytanie najszybciej jak to tylko możliwe!",
+    "submit": "Wyślij formularz"
+  }
+
+
+
+}

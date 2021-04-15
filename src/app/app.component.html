@@ -5,9 +5,13 @@
   <input type="checkbox" id="hamburger" />
   <label for="hamburger"></label>
   <ul class="nav-links">
-    <li><a routerLink="/info" (click)="hideMenu()">Nasza misja</a></li>
-    <li><a routerLink="/" (click)="hideMenu()">Oferta</a></li>
-    <li><a routerLink="/kontakt" (click)="hideMenu()">Skontaktuj się z nami</a></li>
+    <li><a routerLink="/info" (click)="hideMenu()">{{ 'mission' | translate }}</a></li>
+    <li><a routerLink="/logistics" (click)="hideMenu()">{{ 'logistics' | translate }}</a></li>
+    <li><a routerLink="/contact" (click)="hideMenu()">{{ 'contact' | translate}}</a></li>
+    <li>
+      <img src="/assets/img/flags/pl.svg" (click)="setLanguage('pl')" class="lang">
+      <img src="/assets/img/flags/en.svg" (click)="setLanguage('en')" class="lang">
+    </li>
   </ul>
   </nav>
 <main [@rotateCubeToLeft]="prepareRoute(o)" id="container">

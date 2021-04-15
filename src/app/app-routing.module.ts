@@ -1,3 +1,4 @@
+import { LogisticsPageComponent } from './logistics-page/logistics-page.component';
 import { InfoPageComponent } from './info-page/info-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NgModule } from '@angular/core';
@@ -6,13 +7,13 @@ import { ContactPageComponent } from './contact-page/contact-page.component'
 
 const routes: Routes = [
   { path: '', component: HomePageComponent},
-  { path: 'kontakt', component: ContactPageComponent},
-  { path: 'info', component: InfoPageComponent}
+  { path: 'contact', component: ContactPageComponent},
+  { path: 'info', component: InfoPageComponent},
+  { path: 'logistics', component: LogisticsPageComponent}
 ];
 const routerOptions: ExtraOptions = {
-  //useHash: false,
-  scrollPositionRestoration: 'top'
-  //anchorScrolling: 'enabled',
+  scrollPositionRestoration: 'top',
+  anchorScrolling: 'enabled'
   // ...any other options you'd like to use
 };
 @NgModule({

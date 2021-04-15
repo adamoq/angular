@@ -1,0 +1,56 @@
+{
+  "logistics": "Logistics",
+  "contact": "Contact",
+  "mission": "Our mission",
+
+  "more": "Learn more",
+
+
+
+  "logisticsPage": {
+    "pageDesc": "We believe in developing relationships with suppliers and clients. We operate from the third-party warehouses, staffed by professionals and operate under SOP (Standard Operating Procedure), so we can deliver high service levels to our customers.",
+    "transport": "Transport",
+    "transportDesc": "Working with 4PL partners for rail, road, air and sea transport allows us to offer flexible and scalable transport solutions. We collaborate with clients in team-based environments and can swiftly map out and solve their distribution challenges.",
+    "bulletsTitle": "Value-added services",
+    "bullet1": "EDI communication",
+    "bullet2": "Repackaging and labelling services",
+    "bullet3": "Custom-made deliveries (restacking)",
+    "bullet4": "Good distribution practice (GDP) compliant",
+    "bullet5": "Track and trace for shipments in Europe"
+  },
+
+  "specializations": {
+    "title": "Our specializations",
+    "foods": "Foods",
+    "health": "Health",
+    "beauty": "Beauty",
+    "home": "PERSONAL & HOME CARE",
+    "children": "Children",
+    "lamber": "Lamber",
+    "furniture": "Furniture",
+    "metals": "Metals",
+    "private": "Private label"
+  },
+
+  "missionPage": {
+    "title": "About us",
+    "pageDesc": "'Adami/ Miad Group' a highly motivated international team of young entrepreneurial individuals with 'can do' attitude, concurring impossible and easily connecting the demand & supply around the World within speed of the light. With our mission, we guarantee our Partners a smooth sourcing, support and successful collaboration."
+  },
+
+
+
+  "contactPage": {
+    "title": "Contact us",
+    "pageDesc": "Aby się z nami skonktaktować - napisz maila na adres podany poniżej lub uzupełnij formularz kontaktowy. Odpowiemy na Twoje zapytanie najszybciej jak to tylko możliwe!",
+    "pageDesc2": "Odpowiemy na Twoje zapytanie najszybciej jak to tylko możliwe!",
+    "fillForm": "Fill form"
+  },
+  "contactForm": {
+    "title": "Formularz kontaktowy",
+    "desc": "Uzupełnij formularz oraz kliknij przycisk 'Wyślij'.",
+    "pageDesc2": "Odpowiemy na Twoje zapytanie najszybciej jak to tylko możliwe!",
+    "submit": "Submit"
+  }
+
+
+}

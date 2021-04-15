@@ -1,0 +1,23 @@
+@import "../../scss/variables";
+header {
+  color: #fff;
+  background: #000;
+  background-image: url("/assets/img/background3.jpg"); /* fallback */
+  background-size: cover;
+  background-position: top;
+  text-align: justify;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(32, 32, 32, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("/assets/img/background3.jpg");
+}
+svg {
+  display: block;
+  font-size: 50px;
+  margin: 10px auto;
+}
+.title {
+  text-align: center;
+}

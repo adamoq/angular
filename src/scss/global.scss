@@ -1,17 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;800&display=swap");
-@import 'variables';
+@import "variables";
 main {
   min-height: 100vh;
   scroll-behavior: smooth;
   padding-top: 54px;
 }
 header {
-  padding: 30vh 0;
-  width: 100vw;
+  width: 100%;
+  padding: 20vh 0;
+  text-align: justify;
   h1 {
     text-align: center;
     margin: 0;
     color: $base-color;
+    font-size: $font-size-title;
   }
 }
 
@@ -24,66 +26,66 @@ body {
 }
 a {
   text-decoration: none;
+  font-size: $font-size;
+}
 
-  &.btn{
-
-    line-height: 50px;
-    height: 50px;
-    text-align: center;
-    width: 250px;
-    cursor: pointer;
-    color: #FFF;
+.btn {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s;
+  position: relative;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: auto;
+  span {
+    transition: all 0.5s;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
     transition: all 0.3s;
-    position: relative;
-    display: block;
-    background-color:rgba(255, 255, 255, .2);
-    margin: auto;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255, 255, 255, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    transform: scale(0.1, 1);
+  }
+  &:hover {
     span {
-      transition: all .5s;
+      letter-spacing: 2px;
+      color: $base-color;
     }
     &::before {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      opacity: 0;
-      transition: all 0.3s;
-      border-top-width: 1px;
-      border-bottom-width: 1px;
-      border-top-style: solid;
-      border-bottom-style: solid;
-      border-top-color: rgba(255,255,255,0.5);
-      border-bottom-color: rgba(255,255,255,0.5);
-      transform: scale(0.1, 1);
-    }
-    &:hover{
-      span {
-        letter-spacing: 2px;
-        color: $base-color;
-      }
-      &::before {
-        opacity: 1;
-        transform: scale(1, 1);
-      }
-      &::after {
-        opacity: 0;
-        transform: scale(0.1, 1);
-      }
+      opacity: 1;
+      transform: scale(1, 1);
     }
     &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      transition: all 0.3s;
-      background-color: rgba(255,255,255,0.1);
+      opacity: 0;
+      transform: scale(0.1, 1);
     }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255, 255, 255, 0.1);
   }
 }
 nav {
@@ -95,15 +97,20 @@ nav {
   background-color: white;
 
   input[type="checkbox"] {
-    display: none
+    display: none;
   }
-}
-li {
 
-  text-align: center;
-  list-style-type: none;
-  a:any-link{
-    color: $base-color;
+  li {
+    text-align: center;
+    list-style-type: none;
+    a:any-link {
+      color: $base-color;
+    }
+    img {
+      height: 20px;
+      margin: auto 0 auto 10px;
+      cursor: pointer;
+    }
   }
 }
 .header {
@@ -112,11 +119,14 @@ li {
     margin: auto;
   }
 }
+p {
+  font-size: $font-size;
+}
 .title {
-  font-size: 38px;
+  font-size: $font-size-title;
 }
 .desc {
-  font-size: 23px;
+  font-size: $font-size-bigger;
 }
 footer {
   height: 80vh;
@@ -131,26 +141,32 @@ footer {
       rgba(0, 0, 0, 0.733)
     ),
     url("/assets/img/footer2.jpg");
-
 }
 /*=====DESKTOP ONLY=====*/
 @media (min-width: $breakpoint-tablet) {
   nav {
     display: flex;
-    img {
+    a img {
       height: 35px;
     }
+    ul {
+      display: flex;
+      width: 40%;
+      margin-left: auto;
+    }
+    li {
+      color: $base-color;
+      width: 25%;
+      margin: auto;
+      text-align: center;
+      img:first-of-type {
+        margin-left: 30px;
+      }
+    }
   }
-  ul {
-    display: flex;
-    width: 40%;
-    margin-left: auto;
-  }
-  li {
-    color: $base-color;
-    width: 25%;
-    margin: auto;
-    text-align: center;
+
+  header p {
+    padding: 0 26%;
   }
   footer {
     .col {
@@ -165,15 +181,21 @@ footer {
     width: 49%;
     display: inline-block;
   }
+
+  .container {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
 }
 /*=====TABLETS & MOBILE ONLY=====*/
 @media (max-width: $breakpoint-tablet) {
   nav {
     border-bottom: 1px solid #ddd;
-    img{
+    a img {
       height: 48px;
     }
-    ul{
+    ul {
       display: block;
       position: absolute;
       top: 54px;
@@ -183,9 +205,9 @@ footer {
       margin: 0;
       border-top: 1px solid #ddd;
       // Dark overlay on open nav
-      &::before{
-        background: rgba(0, 0, 0, .5);
-        content: '';
+      &::before {
+        background: rgba(0, 0, 0, 0.5);
+        content: "";
         height: 100vh;
         left: 0;
         top: 0;
@@ -193,31 +215,31 @@ footer {
         opacity: 0;
         visibility: hidden;
         width: 100%;
-        transition: all .3s;
+        transition: all 0.3s;
       }
     }
-    li{
+    li {
       border-bottom: 1px solid #ddd;
       opacity: 0;
       visibility: hidden;
       transform: translateY(-20px);
-      transition: all .3s;
+      transition: all 0.3s;
       width: 100%;
-      a{
-        background: #fff;
+      background: #fff;
+      padding: 12px 0;
+      a {
         display: block;
         font-size: 20px;
         font-weight: bold;
-        padding: 12px 0;
         text-align: center;
         width: 100%;
-        transition: all .3s;
+        transition: all 0.3s;
         &:hover {
           color: $secondary-color;
         }
       }
     }
-    input[type="checkbox"]{
+    input[type="checkbox"] {
       position: absolute;
       // Nav open styling - achieved with ':checked' selector
       &:checked + label {
@@ -261,7 +283,7 @@ footer {
           transform: translateY(0);
           @for $i from 1 through length($nav-links) {
             &:nth-child(#{$i}) {
-              transition-delay: ($i - 1)/10+s;
+              transition-delay: ($i - 1)/10 + s;
             }
           }
         }
@@ -279,20 +301,20 @@ footer {
       top: 15px;
       right: 15px;
       width: 21px;
-      transition: all .2s;
+      transition: all 0.2s;
       &::before {
         background: $secondary-color;
-        content: '';
+        content: "";
         height: 4px;
         left: 0;
         position: absolute;
         top: 6px;
         width: 21px;
-        transition: all .2s;
+        transition: all 0.2s;
       }
       &::after {
         background: coral;
-        content: '';
+        content: "";
         height: 4px;
         left: 0;
         position: absolute;
@@ -301,34 +323,35 @@ footer {
         visibility: hidden;
         width: 100%;
         transform: rotate(90deg);
-        transition: all .2s;
+        transition: all 0.2s;
       }
     }
-
+  }
+  header p {
+    padding: 0 5%;
   }
   footer {
     flex-direction: column;
     text-align: center;
     padding-top: 30px;
-    img{
+    img {
       width: 70%;
     }
-    .col{
-      &:nth-of-type(1){
-        order:2;
+    .col {
+      &:nth-of-type(1) {
+        order: 2;
       }
-      &:nth-of-type(2){
-        order:1;
+      &:nth-of-type(2) {
+        order: 1;
       }
     }
   }
-  .col{
+  .col {
     width: 100%;
     text-align: center;
   }
 }
 /*=====MOBILE ONLY=====*/
 
-          /**/
 @media (max-width: $breakpoint-tablet) {
 }

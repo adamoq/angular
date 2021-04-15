@@ -1,4 +1,46 @@
+
 <header>
-  <h1>Info</h1>
-  <div class="btn" routerLink="/"><span>Dowiedz się więcej</span></div>
+  <h1>{{ 'missionPage.title' | translate }}</h1>
+  <p class="desc">{{ 'missionPage.pageDesc' | translate }}</p>
+  <a class="btn" href="/info#specializations"><span>{{ 'more' | translate }}</span></a>
 </header>
+
+<p class="title" id="specializations"><i class="fas fa-cubes"></i> {{ 'specializations.title' | translate }}</p>
+<div class="container">
+  <div class="card">
+    <i class="fas fa-utensils"></i>
+    {{ 'specializations.foods' | translate }}
+  </div>
+  <div class="card">
+    <i class="fas fa-heartbeat"></i>
+    {{ 'specializations.health' | translate }}
+  </div>
+  <div class="card">
+    <i class="fas fa-gem"></i>
+    {{ 'specializations.beauty' | translate }}
+  </div>
+  <div class="card">
+    <i class="fas fa-baby"></i>
+    {{ 'specializations.children' | translate }}
+  </div>
+  <div class="card">
+    <i class="fas fa-atlas"></i>
+    {{ 'specializations.lamber' | translate }}
+  </div>
+  <div class="card">
+    <i class="fas fa-couch"></i>
+    {{ 'specializations.furniture' | translate }}
+  </div>
+  <div class="card">
+    <i class="fas fa-ring"></i>
+    {{ 'specializations.metals' | translate }}
+  </div>
+  <div class="card">
+    <i class="fas fa-house-user"></i>
+    {{ 'specializations.home' | translate }}
+  </div>
+  <div class="card">
+    <i class="fas fa-random"></i>
+    {{ 'specializations.private' | translate }}
+  </div>
+</div>
