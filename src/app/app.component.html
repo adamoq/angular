@@ -5,9 +5,10 @@
   <input type="checkbox" id="hamburger" />
   <label for="hamburger"></label>
   <ul class="nav-links">
-    <li class="active"><a routerLink="/info" (click)="hideMenu()">{{ 'mission' | translate }}</a></li>
-    <li><a routerLink="/logistics" (click)="hideMenu()">{{ 'logistics' | translate }}</a></li>
-    <li><a routerLink="/contact" (click)="hideMenu()">{{ 'contact' | translate}}</a></li>
+    <li><a routerLink="/info" (click)="hideMenu()" routerLinkActive="active">{{ 'mission' | translate }}</a></li>
+    <li><a routerLink="/specializations" (click)="hideMenu()" routerLinkActive="active">{{ 'specializations' | translate }}</a></li>
+    <li><a routerLink="/logistics" (click)="hideMenu()" routerLinkActive="active">{{ 'logistics' | translate }}</a></li>
+    <li><a routerLink="/contact" (click)="hideMenu()" routerLinkActive="active">{{ 'contact' | translate}}</a></li>
     <li>
       <img src="/assets/img/flags/pl.svg" (click)="setLanguage('pl')" class="lang">
       <img src="/assets/img/flags/en.svg" (click)="setLanguage('en')" class="lang">
@@ -18,12 +19,16 @@
   <router-outlet #o="outlet"></router-outlet>
 </main>
 <footer>
-  <div class="col">
-    <p class="title">Example Company</p>
-    <p class="desc">example@company.com</p>
-    <a class="btn" href="/kontakt"><span>Skontaktuj się z nami</span></a>
-  </div>
+
   <div class="col">
     <img src="/assets/img/logo.png">
+  </div>
+  <div class="col">
+    <p class="desc">Example Company</p>
+    <p>example@company.com</p>
+    <p>123-456-789</p>
+    <p>NIP: 945-223-56-34</p>
+    <p>REGON: 386083484</p>
+    <a class="btn" href="/kontakt"><span>Skontaktuj się z nami <i class="far fa-comment-dots"></i></span></a>
   </div>
 </footer>

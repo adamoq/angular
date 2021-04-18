@@ -1,47 +1,50 @@
 
 <header>
-  <h1>{{ 'missionPage.title' | translate }}</h1>
-  <p class="desc">{{ 'missionPage.pageDesc' | translate }}</p>
-  <a class="btn" href="/info#specializations"><span>{{ 'more' | translate }}</span></a>
+  <h1>{{ 'infoPage.title' | translate }}</h1>
+  <p class="desc">{{ 'infoPage.shortDesc' | translate }}</p>
 </header>
 
-<p class="title" id="specializations"><i class="fas fa-cubes"></i> {{ 'specializations.title' | translate }}</p>
-<div class="container">
-  <p class="desc"> {{ 'specializations.desc' | translate }}</p>
+
+
+<section class="container">
+  <p class="desc">{{ 'infoPage.pageDesc' | translate }}</p>
+</section>
+
+<section class="cards-container">
+  <h2>{{ "infoDetails.title" | translate}}</h2>
   <div class="card">
-    <i class="fas fa-utensils"></i>
-    {{ 'specializations.foods' | translate }}
+    <i class="fas fa-shipping-fast"></i>
+    <span>{{ "infoDetails.bullet1" | translate}}</span>
   </div>
   <div class="card">
-    <i class="fas fa-heartbeat"></i>
-    {{ 'specializations.health' | translate }}
+    <i class="fas fa-hands-helping"></i>
+    <span>{{ "infoDetails.bullet2" | translate}}</span>
   </div>
   <div class="card">
-    <i class="fas fa-gem"></i>
-    {{ 'specializations.beauty' | translate }}
+    <i class="fas fa-globe-africa"></i>
+    <span>{{ "infoDetails.bullet3" | translate}}</span>
   </div>
   <div class="card">
-    <i class="fas fa-baby"></i>
-    {{ 'specializations.children' | translate }}
+    <i class="fas fa-chart-line"></i>
+    <span>{{ "infoDetails.bullet4" | translate}}</span>
   </div>
   <div class="card">
-    <i class="fas fa-atlas"></i>
-    {{ 'specializations.lamber' | translate }}
+    <i class="fas fa-map-marked-alt"></i>
+    <span>{{ "infoDetails.bullet5" | translate}}</span>
   </div>
   <div class="card">
-    <i class="fas fa-couch"></i>
-    {{ 'specializations.furniture' | translate }}
+    <i class="fas fa-user-tie"></i>
+    <span>{{ "infoDetails.bullet6" | translate}}</span>
   </div>
-  <div class="card">
-    <i class="fas fa-ring"></i>
-    {{ 'specializations.metals' | translate }}
+</section>
+<section class="container columns-container">
+  <div class="col">
+    <p class="title">{{ "infoColumns.title1" | translate}}</p>
+    <p class="desc">{{ "infoColumns.desc1" | translate}}</p>
   </div>
-  <div class="card">
-    <i class="fas fa-house-user"></i>
-    {{ 'specializations.home' | translate }}
+  <div class="col">
+    <p class="title">{{ "infoColumns.title2" | translate}}</p>
+    <p class="desc">{{ "infoColumns.desc2" | translate}}</p>
   </div>
-  <div class="card">
-    <i class="fas fa-random"></i>
-    {{ 'specializations.private' | translate }}
-  </div>
-</div>
+</section>
+<app-links></app-links>

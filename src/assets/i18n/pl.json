@@ -1,13 +1,14 @@
 {
   "logistics": "Logistyka",
   "contact": "Kontakt",
-  "mission": "Nasza misja",
-
+  "mission": "O nas",
+  "specializations": "Branże",
   "more": "Dowiedz się więcej",
 
 
 
   "logisticsPage": {
+    "shortDesc": "Poznaj szczegóły naszej działalności",
     "pageDesc": "Wierzymy w rozwijanie relacji z dostawcami i klientami. Działamy z zewnętrznych magazynów (sami profesjonaliści) w ramach SOP (Standardowe Procedury Operacyjne), dzięki czemu możemy zapewnić naszym klientom wysoki poziom usług.",
     "transport": "Transport",
     "transportDesc": "Współpraca z partnerami 4PL w zakresie transportu kolejowego, drogowego, lotniczego i morskiego pozwala nam oferować elastyczne i skalowalne rozwiązania transportowe. Współpracujemy z klientami w środowiskach zespołowych i możemy szybko mapować i rozwiązywać problemy związane z dystrybucją.",
@@ -19,23 +20,52 @@
     "bullet5": "Śledzenie przesyłek w Europie"
   },
 
-  "specializations": {
+  "specializationsPage": {
     "title": "Nasze specjalizacje",
+    "subtitle": "Oto branże w których się specjalizujemy",
     "desc": "Specializations are our strength. Benefits of specializations are constant monitoring of the industry labor market, understanding Clients' needs in particular sectors of industry, identifying candidates by means of a professional market analysis and our own database, and fast completion of order.",
+    "button": "Zapytanie ofertowe",
     "foods": "Żywność",
+    "foodsDesc": "Szczegóły oferty",
     "health": "Zdrowie",
+    "healthDesc": "Szczegóły oferty",
     "beauty": "Uroda",
+    "beautyDesc": "Szczegóły oferty",
     "home": "Dom",
+    "homeDesc": "Szczegóły oferty",
     "children": "Dzieci",
-    "lamber": "Lamber",
+    "childrenDesc": "Szczegóły oferty",
+    "lamber": "Drewno",
+    "lamberDesc": "Szczegóły oferty",
     "furniture": "Meble",
+    "furnitureDesc": "Szczegóły oferty",
     "metals": "Metale",
-    "private": "Rebranding"
+    "metalsDesc": "Szczegóły oferty",
+    "private": "Private Label",
+    "privateDesc": "Szczegóły oferty",
+    "car": "Części Samochodowe",
+    "carDesc": "Szczegóły oferty"
   },
 
-  "missionPage": {
-    "title": "Nasza misja",
+  "infoPage": {
+    "title": "O nas",
+    "shortDesc": "Dowiedz się o nas więcej",
     "pageDesc": "'Adami/ Miad Group' wysoce zmotywowany międzynarodowy zespół młodych, przedsiębiorczych osób z podejściem „da się zrobić”, osiągając wszystko co wydaje się nieosiągalne, łącząc w łatwy sposób popyt i podaż na całym świecie w mgnieniu oka. Dzięki naszej misji gwarantujemy naszym Partnerom sprawne zaopatrzenie, wsparcie i udaną współpracę."
+  },
+  "infoDetails": {
+    "title": "Dlaczego wybrać Miad Group?",
+    "bullet1": "Free to expand or adjust storage capacity",
+    "bullet2": "Personalised services and attention to SME needs",
+    "bullet3": "Custom-made deliveries (restacking)",
+    "bullet4": "Expand your sale in easy way",
+    "bullet5": "Track and trace for shipments",
+    "bullet6": "Free and professional support"
+  },
+  "infoColumns": {
+    "title1": "Flexible and scalable",
+    "desc1": "Flexible picking arrangement and delivery options. Easily scale up or down as your business develops.",
+    "title2": "Quick order processing",
+    "desc2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   },
 
 
@@ -51,8 +81,19 @@
     "desc": "Uzupełnij formularz oraz kliknij przycisk 'Wyślij'.",
     "pageDesc2": "Odpowiemy na Twoje zapytanie najszybciej jak to tylko możliwe!",
     "submit": "Wyślij formularz"
+  },
+  "links": {
+    "contactTitle": "Skontaktuj się z nami by poznać więcej szczegółów",
+    "button": "Napisz do nas",
+    "mission": "Dowiedz się o nas więcej",
+    "specializations": "Poznaj nasze specjalizacje",
+    "logistics": "Przeczytaj o usłuchag logistycznych"
+  },
+  "homePage": {
+    "details": "Madami group jest dynamicznie rozwijającą się firmą na rynku Transport-Spedycja-Logistyka. Dzięki naszej wykwalifikowanej kadrze pracowników potrafimy sprostać najtrudniejszym wymaganiom klienta. Zespół Firmy Connect Logistics tworzą ludzie, dla których praca jest nie tylko źródłem utrzymania ale również pasją. Naszą przewagą na rynku jest nie tylko cena naszych usług, ale przede wszystkim elastyczne podejście zarówno do klienta jak i przewoźnika. Podczas gdy inne firmy tracą mnóstwo czasu na szkolenia, my pomagamy naszym klientom wybrać najlepsze rozwiązania transportu ładunków. Wykonując realną pracę, stajemy się mocniejsi na rynku. Strategia naszej firmy różni się od działania korporacji.",
+    "highlight": "Naszych rywali często ograniczają zasady narzucane im przez zagraniczną centralę oraz sztywną hierarchię, w której każda decyzja musi przejść wieloetapowy proces akceptacji. My stawiamy na profesjonalną obsługę i dobre relacje z klientem, aby szybko i skutecznie wykonywać zlecenia.",
+    "highlightTitle": "W skrócie o nas"
   }
-
 
 
 }

@@ -1,0 +1,114 @@
+@import "../../scss/variables";
+header {
+  color: white;
+  background: #000;
+  background-image: url("/assets/img/background1.jpg"); /* fallback */
+  background-size: cover;
+  background-position: bottom;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(32, 32, 32, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("/assets/img/background1.jpg");
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.title {
+  display: block;
+  width: 100%;
+}
+.btn {
+
+  margin-top: auto;
+  width: 100%;
+  line-height: 40px;
+  height: 40px;
+  &:after{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+.card {
+  background-color: transparent;
+  font-size: $font-size-bigger;
+  width: 300px;
+  color: #fff;
+  margin: 5px auto;
+  height: 200px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  svg {
+    display: block;
+    font-size: 50px;
+    margin: 10px auto;
+  }
+}
+.card-inside{
+  margin: auto;
+}
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: $base-color;
+  display: flex;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: $secondary-color;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  .desc {
+    text-transform: uppercase;
+  }
+}
+
+
+
+
+.title {
+  text-align: center;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .card {
+    width: 45%;
+    text-align: center;
+  }
+}
+@media (max-width: $breakpoint-mobile) {
+  .card {
+    width: 90%;
+    text-align: center;
+  }
+}

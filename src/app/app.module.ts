@@ -6,12 +6,13 @@ import { AppComponent } from './app.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { InfoPageComponent } from './info-page/info-page.component';
-import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { LogisticsPageComponent } from './logistics-page/logistics-page.component';
+import { DivisionsPageComponent } from './divisions-page/divisions-page.component';
+import { LinksComponent } from './links/links.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -23,9 +24,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactPageComponent,
     HomePageComponent,
     InfoPageComponent,
-    FooterComponent,
-    LogisticsPageComponent
-  ],
+    LogisticsPageComponent,
+    DivisionsPageComponent,
+    LinksComponent
+   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

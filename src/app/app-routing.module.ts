@@ -1,3 +1,4 @@
+import { DivisionsPageComponent } from './divisions-page/divisions-page.component';
 import { LogisticsPageComponent } from './logistics-page/logistics-page.component';
 import { InfoPageComponent } from './info-page/info-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -9,7 +10,8 @@ const routes: Routes = [
   { path: '', component: HomePageComponent},
   { path: 'contact', component: ContactPageComponent},
   { path: 'info', component: InfoPageComponent},
-  { path: 'logistics', component: LogisticsPageComponent}
+  { path: 'logistics', component: LogisticsPageComponent},
+  { path: 'specializations', component: DivisionsPageComponent}
 ];
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'top',
