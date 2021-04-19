@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import "variables";
 html {
   font-family: "Dosis", sans-serif;
@@ -39,6 +39,7 @@ a {
   width: 250px;
   cursor: pointer;
   color: #fff;
+  text-transform: uppercase;
   transition: all 0.5s ease-in;
   position: relative;
   display: block;
@@ -47,7 +48,7 @@ a {
     position: relative;
     z-index: 2;
   }
-  &:after{
+  &:after {
     position: absolute;
     content: "";
     top: 0;
@@ -55,13 +56,13 @@ a {
     width: 0;
     height: 100%;
     background: $base-color;
-    transition: all .35s;
+    transition: all 0.35s;
     z-index: 1;
   }
-  &:hover span{
+  &:hover span {
     color: #fff;
   }
-  &:hover:after{
+  &:hover:after {
     width: 100%;
   }
 }
@@ -133,19 +134,17 @@ p {
 .container {
   margin: 0 auto;
   text-align: justify;
+  background-color: white;
 }
 
 /*HIGHLIGHT SECTION*/
 .highlight-container {
-    text-align: justify;
+  text-align: justify;
 }
 .highlight {
   color: white;
   background: $secondary-gradient;
 }
-
-
-
 footer {
   display: flex;
   color: #000;
@@ -184,10 +183,10 @@ footer {
       }
     }
   }
-
   header {
-    h1,p {
-    padding-left: 10%;
+    h1,
+    p {
+      padding-left: 10%;
     }
   }
   footer {
@@ -204,7 +203,7 @@ footer {
         text-align: right;
       }
     }
-    .btn{
+    .btn {
       margin-left: auto;
     }
     img {
@@ -225,17 +224,17 @@ footer {
   .highlight-container {
     display: flex;
   }
-  .details{
+  .details {
     width: 50%;
     background-color: white;
     padding: 30px;
     height: fit-content;
     margin: auto 0 auto auto;
-    display:inline-block;
+    display: inline-block;
     display: flex;
   }
-  .highlight{
-    display:inline-block;
+  .highlight {
+    display: inline-block;
     margin: auto auto auto 0;
     width: 30%;
     margin-bottom: 50px;
@@ -422,12 +421,13 @@ footer {
     }
   }
   header {
-    text-align:center;
+    text-align: center;
   }
   .container {
     width: 85%;
   }
-  .highlight, .details{
+  .highlight,
+  .details {
     padding: 20px;
   }
   footer {

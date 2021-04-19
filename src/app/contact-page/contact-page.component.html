@@ -1,26 +1,26 @@
 <header>
   <h1>{{ 'contactPage.title' | translate }}</h1>
-  <p class="desc">{{ 'contactPage.pageDesc' | translate }}</p>
-  <a class="btn" href="/contact#form"><span><i class="fas fa-envelope-open-text"></i> {{ 'contactPage.fillForm' | translate }}</span></a>
+  <p class="desc">{{ 'contactPage.shortDesc' | translate }}</p>
 </header>
 
 
 
 
-<div id="form" class="container">
-  <p class="title">{{'contactForm.title' | translate}}</p>
+<section id="form" class="container">
+  <h1 class="title">{{'contactForm.title' | translate}}</h1>
+  <p class="desc">{{ 'contactPage.pageDesc' | translate }}</p>
   <p class="desc">{{'contactForm.desc' | translate}}</p>
   <form [formGroup]="formData" (ngSubmit)="onSubmit(formData.value)">
     <div class="col">
 
       <label for="fullname">Imię i nazwisko</label>
-      <input type="text" class="form-control" name="Fullname" placeholder="Full Name" formControlName="Fullname"/>
+      <input type="text" class="form-control" name="Fullname" placeholder="Full Name" formControlName="Fullname" />
 
       <label for="Email">E-mail</label>
-      <input type="email" class="form-control" name="Email" placeholder="Enter email" formControlName="Email"/>
+      <input type="email" class="form-control" name="Email" placeholder="Enter email" formControlName="Email" />
 
       <label for="Phonenumber">Numer telefonu</label>
-      <input type="text" class="form-control" name="Phonenumber" placeholder="" formControlName="Phonenumber"/>
+      <input type="text" class="form-control" name="Phonenumber" placeholder="" formControlName="Phonenumber" />
     </div>
     <div class="col">
       <label for="comment">Comment</label>
@@ -29,6 +29,6 @@
       <button type="submit" class="btn" [disabled]="!formData.valid">{{'contactForm.submit' | translate}}</button>
     </div>
   </form>
-</div>
+</section>
 
-
+<app-big-links></app-big-links>

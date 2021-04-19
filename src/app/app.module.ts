@@ -13,6 +13,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { LogisticsPageComponent } from './logistics-page/logistics-page.component';
 import { DivisionsPageComponent } from './divisions-page/divisions-page.component';
 import { LinksComponent } from './links/links.component';
+import { BigLinksComponent } from './big-links/big-links.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -26,7 +27,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     InfoPageComponent,
     LogisticsPageComponent,
     DivisionsPageComponent,
-    LinksComponent
+    LinksComponent,
+    BigLinksComponent
    ],
   imports: [
     BrowserModule,

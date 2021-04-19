@@ -1,23 +1,13 @@
 @import "../../scss/variables";
-header {
-  background: #000;
-  background-image: url("/assets/img/background1.jpg"); /* fallback */
-  background-size: cover;
-  background-position: bottom;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(32, 32, 32, 0.8),
-      rgba(0, 0, 0, 0.8)
-    ),
-    url("/assets/img/background1.jpg");
-}
-.container {
+
+section {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
 .title {
   display: block;
+  text-transform: uppercase;
   width: 100%;
 }
 .btn {
