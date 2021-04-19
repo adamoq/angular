@@ -76,7 +76,8 @@ header {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: $base-color;
+
+  background: $base-gradient;
   display: flex;
   text-transform: uppercase;
   font-weight: lighter;

@@ -4,18 +4,10 @@
   <p class="desc">{{ 'logisticsPage.shortDesc' | translate }}</p>
 </header>
 
-<div class="container" id="details">
-
-
-  <p class="desc">{{ 'logisticsPage.pageDesc' | translate }}</p>
-
-
-  <p class="title"><i class="fas fa-truck-moving"></i> {{ 'logisticsPage.transport' | translate }}</p>
-</div>
 
 <section class="highlight-container">
   <div class="details">
-    <p class="desc">{{ 'logisticsPage.transportDesc' | translate }}</p>
+    <p class="desc">{{ 'logisticsPage.transportDesc' | translate }} {{ 'logisticsPage.pageDesc' | translate }}</p>
 
   </div>
   <div class="highlight">
@@ -28,5 +20,12 @@
       <li>{{ 'logisticsPage.bullet5' | translate }}</li>
     </ul>
   </div>
+</section>
+
+
+<section class="container" id="details">
+
+
+  <p class="desc">{{ 'logisticsPage.pageDesc' | translate }}</p>
 </section>
 <app-links></app-links>

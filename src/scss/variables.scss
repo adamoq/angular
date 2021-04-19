@@ -2,13 +2,15 @@
 //$secondary-color: #1E2749;
 //$light-color: #EEF8FF;
 $base-color: #fc7b11;
-$secondary-color: #14213d;
+$base-gradient: linear-gradient(to left top, rgb(255, 102, 0), rgb(255, 153, 0));
+$secondary-color: rgb(0, 33, 83);
+$secondary-gradient: linear-gradient(to left top, rgb(0, 8, 126), rgb(102, 0, 185));
 $contrast-color: #c6538c;
 $light-color: #e5e5e5;
 $grey-color: #6E8387;
 $breakpoint-tablet: 1025px;
 $breakpoint-mobile: 481px;
 $font-size: 18px;
-$font-size-bigger: 25px;
+$font-size-bigger: 22px;
 $font-size-title: 48px;
 $nav-links: about, products, media, logistics, languages;
