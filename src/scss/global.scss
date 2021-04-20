@@ -134,7 +134,6 @@ p {
 .container {
   margin: 0 auto;
   text-align: justify;
-  background-color: white;
 }
 
 /*HIGHLIGHT SECTION*/
@@ -144,6 +143,11 @@ p {
 .highlight {
   color: white;
   background: $secondary-gradient;
+  .desc {
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+  }
 }
 footer {
   display: flex;
@@ -158,30 +162,29 @@ footer {
 @media (min-width: $breakpoint-tablet) {
   nav {
     display: flex;
-    a {
-      &:hover,
-      &.active {
-        &:after {
-          width: 100%;
-        }
-      }
-      img {
-        height: 35px;
-      }
-    }
     ul {
       display: flex;
-      width: 40%;
       margin-left: auto;
     }
     li {
-      width: 25%;
-      margin: auto;
-      text-align: center;
-      img:first-of-type {
-        margin-left: 30px;
+      img {
+        margin-right: 10px;
+      }
+
+      a {
+        padding: 0 50px;
+        &:hover,
+        &.active {
+          &:after {
+            width: 100%;
+          }
+        }
       }
     }
+  }
+  #logo{
+    height: 35px;
+    margin-left: 10px;
   }
   header {
     h1,
@@ -241,11 +244,6 @@ footer {
     max-width: 300px;
     padding: 60px;
     margin-top: -40px;
-    .desc {
-      text-align: center;
-      text-transform: uppercase;
-      border-bottom: 1px solid white;
-    }
   }
   /*SCROLLBAR*/
 
@@ -283,9 +281,6 @@ footer {
         &:after {
           width: 35%;
         }
-      }
-      img {
-        height: 48px;
       }
     }
     ul {
@@ -419,6 +414,9 @@ footer {
         transition: all 0.2s;
       }
     }
+  }
+  #logo {
+    height: 48px;
   }
   header {
     text-align: center;

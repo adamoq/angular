@@ -1,4 +1,6 @@
 @import "../../scss/variables";
+
+
 header {
   background-image: url("/assets/img/background3.jpg"); /* fallback */
   background-size: cover;
@@ -10,6 +12,8 @@ header {
     ),
     url("/assets/img/background2.jpg");
 }
+
+
 .container .desc {
   text-align: center;
 }
