@@ -4,7 +4,8 @@ section {
   flex-wrap: wrap;
 }
 .link {
-  background: $grey-color;
+  //background: $grey-color;
+  background: $secondary-color;
   display: flex;
   text-transform: uppercase;
   span {
@@ -13,7 +14,7 @@ section {
   }
 }
 a.link:not(.hidden) ~ a {
-  background: $secondary-color;
+  //background: $secondary-color;
 }
 .contact {
   text-align: center;
@@ -34,8 +35,8 @@ a.link:not(.hidden) ~ a {
 }
 @media (min-width: $breakpoint-tablet) {
   .link {
-    min-width: 580px;
-    width: 35%;
+    min-width: 600px;
+    width: 40%;
     height: 100px;
     display: flex;
     margin-left: auto;
