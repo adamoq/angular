@@ -23,15 +23,6 @@ img {
     height: fit-content;
     margin: auto;
   }
-  &::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, -50%) rotate(-3deg) skew(-3deg);
-    background: white;
-    z-index: -1;
-  }
 }
 .content {
   display: flex;
@@ -52,8 +43,14 @@ h2 {
     &::before {
       top: 110%;
       height: 50vh;
+      content: "";
+      position: absolute;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, -50%) rotate(-3deg) skew(-3deg);
+      background: white;
+      z-index: -1;
     }
-
     img {
       width: 30%;
       max-width: 400px;
@@ -67,24 +64,14 @@ h2 {
   }
 }
 @media (max-width: $breakpoint-tablet) {
-  .description img {
-    width: 80%;
-    max-width: 400px;
+  .description {
+    background: white;
+    img {
+      width: 80%;
+      max-width: 400px;
+    }
   }
   .content {
     width: 100%;
-  }
-}
-
-@media (max-width: $breakpoint-tablet) and (min-width: $breakpoint-mobile) {
-  .description::before {
-    top: 140%;
-    height: 105vh;
-  }
-}
-@media (max-width: $breakpoint-mobile) {
-  .description::before {
-    top: 170%;
-    height: 130vh;
   }
 }

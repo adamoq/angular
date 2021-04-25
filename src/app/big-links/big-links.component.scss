@@ -1,11 +1,5 @@
 @import "../../scss/variables";
 
-section {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 40%;
-}
 .title {
   display: block;
   text-transform: uppercase;
@@ -87,7 +81,14 @@ section {
 .title {
   text-align: center;
 }
-
+@media (min-width: $breakpoint-tablet) {
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 40%;
+  }
+}
 @media (max-width: $breakpoint-tablet) {
   .card {
     width: 45%;

@@ -7,11 +7,17 @@ import { RouterModule, Routes, ExtraOptions } from '@angular/router';
 import { ContactPageComponent } from './contact-page/contact-page.component'
 
 const routes: Routes = [
-  { path: '', component: HomePageComponent},
-  { path: 'contact', component: ContactPageComponent},
-  { path: 'info', component: InfoPageComponent},
-  { path: 'logistics', component: LogisticsPageComponent},
-  { path: 'specializations', component: DivisionsPageComponent}
+  {
+    path: '',
+    component: HomePageComponent,
+    data: {
+      title: 'Dashboard'
+    }
+  },
+  getRoute('contact', ContactPageComponent),
+  getRoute('info', InfoPageComponent),
+  getRoute('logistics', LogisticsPageComponent),
+  getRoute('specializations', DivisionsPageComponent)
 ];
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'top',
@@ -19,7 +25,13 @@ const routerOptions: ExtraOptions = {
   // ...any other options you'd like to use
 };
 @NgModule({
-  imports: [RouterModule.forRoot(routes,routerOptions)],
+  imports: [RouterModule.forRoot(routes, routerOptions)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule { };
+
+function getRoute(routeName: string, component: object): object {
+  return { path: routeName, component: component,
+    data: { title: routeName }
+  };
+}
