@@ -14,19 +14,17 @@ import { filter, map } from "rxjs/operators";
   ]
 })
 export class AppComponent {
-  title = 'Madami Group';
-  param = { value: 'world' };
+  title: string;
 
   constructor(private translate: TranslateService, private router: Router, private activatedRoute: ActivatedRoute, private titleService: Title) {
     let availableLangs = ['en', 'pl'];
     translate.addLangs(availableLangs);
-    // this language will be used as a fallback when a translation isn't found in the current language
     var userLang = navigator.language.slice(0, 2);
     userLang = availableLangs.includes(userLang) ? userLang : 'en';
     translate.setDefaultLang(userLang);
     // the lang to use, if the lang isn't available, it will use the current loader to get them
     translate.use(userLang);
-    let self = this;
+
     //title links
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd),

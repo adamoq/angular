@@ -1,9 +1,85 @@
-<section class="links">
+<!--
+  <section class="links">
   <a routerLink="/info" routerLinkActive="hidden" class="link"><span>{{ 'links.mission' | translate }}</span></a>
+
+
   <a routerLink="/specializations" routerLinkActive="hidden" class="link"><span>{{ 'links.specializations' | translate }}</span></a>
+
+
   <a routerLink="/logistics" routerLinkActive="hidden" class="link"><span>{{ 'links.logistics' | translate }}</span></a>
+
+
   <div class="contact">
     <a routerLink="/contact"><span>{{ 'links.contactTitle' | translate }}</span></a>
     <a routerLink="/contact" class="btn"><span>{{ 'links.button' | translate }}</span></a>
   </div>
+</section>
+-->
+
+<section class="container links-container">
+  <p class="title">{{'bigLinks.title' | translate}}</p>
+
+
+  <a routerLink="/info" routerLinkActive="hidden" class="box">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <div class="card-inside">
+          <i class="fas fa-person-booth"></i>
+          {{ 'info' | translate }}
+        </div>
+      </div>
+      <div class="flip-card-back">
+        <p class="desc">{{ 'links.mission' | translate }}</p>
+        <a class="btn" href="/contact#form"><span>{{ 'bigLinks.button' | translate }}</span></a>
+      </div>
+    </div>
+  </a>
+
+  <a routerLink="/contact" routerLinkActive="hidden" class="box">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <div class="card-inside">
+          <i class="fas fa-cubes"></i>
+          {{ 'contact' | translate }}
+        </div>
+      </div>
+      <div class="flip-card-back">
+        <p class="desc">{{ 'links.contactTitle' | translate }}</p>
+        <a class="btn" href="/contact#form"><span>{{ 'links.button' | translate }}</span></a>
+      </div>
+    </div>
+  </a>
+
+  <a routerLink="/specializations" routerLinkActive="hidden" class="box">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <div class="card-inside">
+          <i class="fas fa-cubes"></i>
+          {{ 'specializations' | translate }}
+        </div>
+      </div>
+      <div class="flip-card-back">
+        <p class="desc">{{ 'links.specializations' | translate }}</p>
+        <a class="btn" href="/contact#form"><span>{{ 'bigLinks.button' | translate }}</span></a>
+      </div>
+    </div>
+  </a>
+
+
+  <a routerLink="/logistics" routerLinkActive="hidden" class="box">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <div class="card-inside">
+          <i class="fas fa-truck"></i>
+          {{ 'logistics' | translate }}
+        </div>
+      </div>
+      <div class="flip-card-back">
+        <p class="desc">{{ 'links.logistics' | translate }}</p>
+        <a class="btn" href="/contact#form"><span>{{ 'bigLinks.button' | translate }}</span></a>
+      </div>
+    </div>
+  </a>
+
+
 </section>

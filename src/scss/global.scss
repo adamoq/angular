@@ -151,11 +151,132 @@ p {
     border-bottom: 1px solid white;
   }
 }
-
 .details {
   background-color: white;
   padding: 30px;
 }
+
+
+/*LINKS COMPONENT*/
+.links-container{
+
+  .title {
+    display: block;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+  }
+
+  .desc {
+    margin-bottom: 0;
+  }
+}
+.hidden {
+  display: none;
+}
+.box {
+  background-color: transparent;
+  font-size: $font-size-bigger;
+  color: #fff;
+  margin: 5px auto;
+  text-transform: uppercase;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  svg {
+    display: block;
+    font-size: 50px;
+    margin: 10px auto;
+  }
+  &:first-of-type:not(.hidden),
+  &:nth-of-type(3):not(.hidden){
+    .flip-card-front {
+      background: $secondary-gradient;
+    }
+
+  }
+}
+.card-inside {
+  margin: auto;
+
+}
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.box:hover .flip-card-inner, .card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background: $base-gradient;
+  display: flex;
+  font-weight: lighter;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: $secondary-color;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+
+  .btn {
+    margin-top: auto;
+    width: 100%;
+    line-height: 30px;
+    font-size: 15px;
+    height: 30px;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .links-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 50%;
+  }
+  .box {
+
+  height: 150px;
+  width: 33.3%;
+  }
+}
+@media (max-width: $breakpoint-tablet) {
+  .box {
+    width: 45%;
+    height: 150px;
+    text-align: center;
+  }
+}
+@media (max-width: $breakpoint-mobile) {
+  .box {
+    width: 90%;
+    height: 150px;
+    text-align: center;
+  }
+}
+
+
+
+
 footer {
   display: flex;
   color: #000;
