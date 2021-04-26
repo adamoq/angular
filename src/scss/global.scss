@@ -186,12 +186,14 @@ p {
     font-size: 50px;
     margin: 10px auto;
   }
-  &:first-of-type:not(.hidden),
-  &:nth-of-type(3):not(.hidden){
-    .flip-card-front {
-      background: $secondary-gradient;
-    }
 
+  .flip-card-front {
+    background: $secondary-gradient;
+  }
+  &:not(.hidden):nth-of-type(2){
+    .flip-card-front {
+      background: $base-gradient;
+    }
   }
 }
 .card-inside {
